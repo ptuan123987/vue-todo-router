@@ -1,0 +1,38 @@
+
+name: 'build vuejs'
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+    
+jobs:
+  build:
+#   runs-on : cung cấp 1 máy server
+    runs-on: ubuntu-latest
+    steps:
+#     uses : sử dụng các actions có sẵn
+      - uses: actions/checkout@v2
+
+      - name: xuất thông tin
+        run : echo "dang build"
+       
+
+      - name: Set node version to 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          
+      - run : echo "cai dat nodejs thanh cong"
+
+      - run: npm install
+      - run : echo "đang build"
+      - run: npm run build
+        
+      
+
+  
+
+  
