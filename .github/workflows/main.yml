@@ -31,7 +31,14 @@ jobs:
       - run : echo "đang build"
       - run: npm run build
         
-      
+      name: commit
+        run: |
+          # Stage the file, commit and push
+          cd dist
+          git init 
+          git add .
+          git commit -m "build"
+          git push -u git@github.com:ptuan123987/vue-todo-router.git dev:gh-pages
 
   
 
