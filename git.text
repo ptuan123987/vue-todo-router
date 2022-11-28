@@ -1,0 +1,52 @@
+Git : phần mềm quản lý version của code
+GitHub: dịch vụ máy chủ quản lý code miễn phí
+Ngoài ra còn có GitLap nhưng GitHub là cái nổi tiếng nhất
+Có 2 thao tác : lấy code về và đẩy code lên
+
+- repository :  repo => kho chứa =>1 project => 1 kho chứa
+- Các lệnh git cơ bản :
+
+- git clone (url) : chỉ sử dụng 1 lân duy nhất => sao chép repo trên mạng về máy
+-  git clone (url )
+
+
+SSH : là 1 phương thức (protocol) truyền file
+
+Key pair : SSH key 
+    - ổ khóa , 1 cái khóa
+    - tạo key : ssh-keygen
+    secret key : khóa bí mật
+    public key : khóa trên máy đưa lên máy remote
+
+- git pull : lấy các thay đổi trên remote về local
+- nhánh (branch) :
+    - nhánh remote : remote branch
+    - nhánh local : local branch
+
+    git branch : liệt kê các nhánh
+    git checkout : kiểm tra đang ở nhánh nào
+    git branch -r: liệt kê các nhánh trên remote
+
+    - đẩy sự thay đổi lên mạng :commit sự thay đổi vào local branch
+    - push sự thay đổi lên remote
+
+    3 lệnh : git add [danh sách file] 
+            git add . : add toàn bộ file lên local
+            git commit -m 'text'
+            git remote add origin
+            git push origin main 
+
+    có 3 trạng thái của file : 
+        U :unchecked : chưa vào git
+        M : modified : đã sửa
+        D : deleted  : đã xóa
+
+    nhảy nhánh : git checkout tên nhánh
+    đẻ nhánh : 
+
+    trong vai trò  là leader : 
+        git checkout deve
+        git pull  : lấy hết tất cả sự thay đổi về máy
+    
+    
+
