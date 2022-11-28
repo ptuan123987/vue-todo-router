@@ -1,6 +1,7 @@
 <template>
   <div class="">
     <VueNavigation/>
+    <p>Tôi là tuấn</p>
   </div>
 </template>
 <script>

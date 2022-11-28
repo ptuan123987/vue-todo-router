@@ -63,7 +63,9 @@ Key pair : SSH key
 
         + github_page :  
             - lưu trữ file static
-            - 
+            -
+            
+             
     module.exports = {
     publicPath: process.env.NODE_ENV === 'production' ?
         '' : '/'
