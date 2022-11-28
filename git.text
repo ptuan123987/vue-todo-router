@@ -48,5 +48,23 @@ Key pair : SSH key
         git checkout deve
         git pull  : lấy hết tất cả sự thay đổi về máy
     
-    
+    .gitignore : các thư mục bị lờ đi (các thư mục không được push lên github)
 
+    Deploy :
+        khi tạo ra 1 web : 
+            - build -> dict -> upload lên host
+         
+        + Hosting : nơi lưu trư web
+        + Server : 1 cái máy tính
+            - cài git :
+            - clone :
+            - git pull về 
+            - build
+
+        + github_page :  
+            - lưu trữ file static
+            - 
+    module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ?
+        '' : '/'
+}
